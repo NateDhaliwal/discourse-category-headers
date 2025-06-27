@@ -1,4 +1,4 @@
-
+{{#if this}}
   <div class="category-title-header category-banner-{{this.args.category.slug}}" style="{{this.getHeaderStyle}}">
     <div class="category-title-contents">
       <div class="category-logo aspect-image">
@@ -30,3 +30,4 @@
       <a href="{{this.args.category.topic_url}}">{{this.aboutTopicUrl}}</a>
     </div>
   </div>
+{{/if}}
