@@ -50,6 +50,8 @@ export default class CategoryHeaders extends Component {
     const subCat = !settings.show_subcategory_header && this.args.category.parentCategory;
     const noDesc = !settings.hide_if_no_category_description && !this.args.category.description_text;
     const path = window.location.pathname;
+    console.log(path);
+    console.log(/^\/c\//.test(path));
     return (/^\/c\//.test(path)
       && !isException
       && !noDesc
